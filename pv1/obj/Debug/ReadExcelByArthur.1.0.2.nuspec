@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ReadExcelByArthur</id>
+    <version>1.0.2</version>
+    <authors>Eu</authors>
+    <description>My Nuget Lib</description>
+    <tags>library,math,example</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="ClosedXML" version="0.102.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/home/artur/Projects/cSharp/pv1_nuget/pv1/bin/Debug/net8.0/pv1.dll" target="lib/net8.0/pv1.dll" />
+  </files>
+</package>

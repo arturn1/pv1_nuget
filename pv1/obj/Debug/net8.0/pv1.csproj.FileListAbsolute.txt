@@ -1,0 +1,12 @@
+/home/artur/Projects/cSharp/pv1_nuget/pv1/bin/Debug/net8.0/pv1.deps.json
+/home/artur/Projects/cSharp/pv1_nuget/pv1/bin/Debug/net8.0/pv1.dll
+/home/artur/Projects/cSharp/pv1_nuget/pv1/bin/Debug/net8.0/pv1.pdb
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.csproj.AssemblyReference.cache
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.GeneratedMSBuildEditorConfig.editorconfig
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.AssemblyInfoInputs.cache
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.AssemblyInfo.cs
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.csproj.CoreCompileInputs.cache
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.dll
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/refint/pv1.dll
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/pv1.pdb
+/home/artur/Projects/cSharp/pv1_nuget/pv1/obj/Debug/net8.0/ref/pv1.dll

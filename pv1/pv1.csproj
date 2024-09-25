@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackageId>ReadExcelByArthur</PackageId> <!-- Nome único do pacote -->
+    <Version>1.0.3</Version> <!-- Versão do pacote -->
+    <Authors>Eu</Authors> <!-- Nome do autor -->
+    <Company>FreedFree</Company> <!-- Nome da empresa -->
+    <Description>My Nuget Lib</Description> <!-- Descrição -->
+    <PackageTags>library,math,example</PackageTags> <!-- Tags relacionadas -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild> 
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="ClosedXML" Version="0.102.3" />
+    <PackageReference Include="EPPlus" Version="7.3.2" />
+
+  </ItemGroup>
+
+</Project>
