@@ -64,6 +64,10 @@ namespace ExcelUtilityLib
                 throw new ArgumentException("Os dados fornecidos estão vazios.");
             }
 
+            // Obtém o valor da variável de ambiente EXCEL_CUSTOM_COLUMN
+            var customColumnValue = Environment.GetEnvironmentVariable("EXCEL_CUSTOM_COLUMN") ?? "N/A";
+            var customColumnName = Environment.GetEnvironmentVariable("EXCEL_CUSTOM_COLUMN_NAME") ?? "CustomField";
+
             // Cria um novo pacote Excel
             using (var package = new ExcelPackage())
             {
@@ -72,6 +76,9 @@ namespace ExcelUtilityLib
 
                 // Extrai os cabeçalhos do primeiro objeto da lista
                 var headers = data.First().Keys.ToList();
+
+                // Adiciona o cabeçalho da coluna personalizada
+                headers.Add(customColumnName);
 
                 // Adiciona os cabeçalhos à primeira linha
                 for (int i = 0; i < headers.Count; i++)
@@ -83,10 +90,13 @@ namespace ExcelUtilityLib
                 for (int i = 0; i < data.Count; i++)
                 {
                     var rowData = data[i];
-                    for (int j = 0; j < headers.Count; j++)
+                    for (int j = 0; j < headers.Count - 1; j++) // -1 porque a última coluna é a personalizada
                     {
                         worksheet.Cells[i + 2, j + 1].Value = rowData[headers[j]]?.ToString();
                     }
+
+                    // Adiciona o valor da variável de ambiente na última coluna
+                    worksheet.Cells[i + 2, headers.Count].Value = customColumnValue;
                 }
 
                 // Auto ajusta as colunas de acordo com o conteúdo
